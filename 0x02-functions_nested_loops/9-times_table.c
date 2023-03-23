@@ -15,11 +15,11 @@ _putchar(48);
 for (j = 1; j <= 9; j++)
 {
 _putchar(',');
-_putchar('.');
+_putchar(' ');
 res = i * j;
 if (res <= 9)
 {
-_putchar('.');
+_putchar(' ');
 _putchar(res + 48);
 }
 else
