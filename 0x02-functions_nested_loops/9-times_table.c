@@ -8,14 +8,20 @@
 */
 void times_table(void)
 {
-int res, i, j, first_digit, last_digit;
+int res, i = 0, j = 0, first_digit, last_digit;
 for (i = 0; i <= 9; i++)
 {
-for (j = 0; j <= 9; j++)
+_putchar(48);
+for (j = 1; j <= 9; j++)
 {
+_putchar(',');
+_putchar('.');
 res = i * j;
 if (res <= 9)
+{
+_putchar('.');
 _putchar(res + 48);
+}
 else
 {
 last_digit = res % 10;
@@ -27,12 +33,7 @@ first_digit /= 10;
 _putchar(first_digit + 48);
 _putchar(last_digit + 48);
 }
-if (j < 9)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
+
 }
 _putchar('\n');
 }
