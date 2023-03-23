@@ -1,13 +1,12 @@
 #include "main.h"
 #include<stdlib.h>
 #include<stdio.h>
+#include<unistd.h>
 
-/*
-* main entry point
-* Description - prints lowercase alphabet to stdout
-* Return 0
+/**
+* print_alphabet - prints lowercase alphabet to stdout
+* Return : on success 0
 */
-
 void print_alphabet(void)
 {
 int i;
